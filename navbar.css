@@ -12,6 +12,7 @@
   padding: 10px 20px;
   background-color: #cdc75c;
   color: white;
+  box-shadow: 0 4px 6px rgba(82, 109, 32, 0.2);
 }
 
 .container {
@@ -20,18 +21,22 @@
   gap: 10px;
 }
 
+.container span{
+   font-size: 20px;
+   font-weight: bold;
+}
 .container img {
   width: 40px; 
   height: auto;
 }
 
+
 .navbar ul {
-  display: grid;
-  grid-auto-flow: column;
-  gap: 20px;
-  list-style: none;
+  display: flex;
   justify-content: center;
   align-items: center;
+  gap: 20px;
+  list-style: none;
 }
 
 .nav-link {
@@ -42,14 +47,14 @@
 }
 
 .nav-link:hover {
-  color: #e50914;
+  color: #716c11;
 }
 
 .nav-btn {
   display: flex;
   gap: 1rem;
   justify-content: end;
-  flex-wrap: nowrap; 
+  flex-wrap: wrap; 
 }
 
 .btn {
@@ -86,9 +91,8 @@
   }
 
   .navbar ul {
-    justify-content: center;
-    grid-auto-flow: row; 
-    row-gap: 10px;
+    flex-direction: column; 
+    gap: 10px;
   }
 
   .nav-btn {

@@ -77,12 +77,12 @@
   color: white;
 }
 
-/* Responsiveness */
+/* Navbar responsiveness */
 @media (max-width: 768px) {
   .section-navbar {
-    grid-template-columns: 1fr;  
-    grid-template-rows: auto auto auto; 
-    row-gap: 10px;
+    grid-template-columns: repeat(1, 1fr);  
+    grid-template-rows: repeat(3, auto);   
+    row-gap: 1.5rem;   
     text-align: center;
   }
 
@@ -92,11 +92,14 @@
 
   .navbar ul {
     flex-direction: column; 
-    gap: 10px;
+    gap: 1rem;  
   }
 
   .nav-btn {
     justify-content: center; 
-    flex-direction: row;   
+    flex-direction: row;  
+    gap: 1rem;  
   }
 }
+
+
